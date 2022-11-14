@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="microphone"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Audio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list style="padding: 0.2rem;">
+    <ion-item-sliding button *ngFor="let file of storedFileNames">
+      <ion-item lines="none" (click)="playAudio(file)">
+        <ion-label>
+          <div class="file-name">{{ file.name }}</div>
+          <div class="file-size">{{ bytesToSize(file.size) }}</div>
+        </ion-label>
+        <ion-label slot="end">
+          <ion-icon name="play-circle" size="large" color="primary"></ion-icon>
+        </ion-label>
+      </ion-item>
+
+      <ion-item-options side="start">
+        <ion-item-option color="danger" (click)="deleteAudio(file)" class="delete-slide">
+          <ion-icon name="trash-outline" size="large"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

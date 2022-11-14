@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">microphone</string>
+    <string name="title_activity_main">microphone</string>
+    <string name="package_name">com.jmartin.microphone</string>
+    <string name="custom_url_scheme">com.jmartin.microphone</string>
+</resources>

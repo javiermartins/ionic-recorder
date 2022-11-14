@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'microphone',
+  appId: 'com.jmartin.recorder',
+  appName: 'recorder',
   webDir: 'www',
   bundledWebRuntime: false
 };
